@@ -1,9 +1,7 @@
-package main
+package models
 
-import(
+import (
 	_ "github.com/go-sql-driver/mysql"
-	"database/sql"
-	"fmt"
 )
 
 
