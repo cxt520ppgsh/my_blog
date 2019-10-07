@@ -19,6 +19,7 @@ func (this *ArticleDetailController) Post() {
 	json.Unmarshal(this.Ctx.Input.RequestBody, &ob)
 
 	var articleDetail models.ArticleDetailResult = models.QueryArticleDetail(ob.ArticleId)
+	fmt.Println("request", string(this.Ctx.Input.RequestBody))
 	result["code"] = "000"
 	result["msg"] = "success"
 	result["data"] = articleDetail

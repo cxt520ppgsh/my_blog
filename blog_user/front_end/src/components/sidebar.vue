@@ -1,8 +1,8 @@
 <template>
   <div id="left_menu">
     <div class="menu_name">
-      <h1>区块链技术实战</h1>
-      <h5>&nbsp;现有的，都是以前的积累得来的。现在做的，未来都会反馈给我们。&nbsp;</h5>
+      <h1>吴亦堂的个人博客</h1>
+      <h5>&nbsp;生活本就只有方向没有答案&nbsp;</h5>
     </div>
     <nav>
       <ul>
@@ -19,8 +19,8 @@
       </ul>
     </nav>
     <div class="info">
-      <img src="../assets/head.jpg" alt="head">
-      <div class="info_name">罗小辉</div>
+      <img src="../assets/head.png" alt="head">
+      <div class="info_name">吴亦堂</div>
       <div class="archive">
         <ul>
           <router-link to="/article">
@@ -33,13 +33,8 @@
       </div>
       <ul class="communication">
         <li class="communication_item">
-          <a href="https://blog.csdn.net/a394268045?viewmode=contents">
-            <span>csdn博客</span>
-          </a>
-        </li>
-        <li class="communication_item">
-          <a href="https://learnblockchain.cn/">
-            <span>深入浅出区块链</span>
+          <a href="https://blog.csdn.net/cxt520ppgsh">
+            <span>吴亦堂的开发小站</span>
           </a>
         </li>
       </ul>
