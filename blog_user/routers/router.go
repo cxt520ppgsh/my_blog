@@ -15,7 +15,8 @@ func init() {
         ExposeHeaders:    []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type"},
         AllowCredentials: true,
 	}))
-	
+
+	beego.Router("/",&controllers.MainController{})
 	beego.Router("/articleDetail",&controllers.ArticleDetailController{})
 	beego.Router("/articleList",&controllers.ArticleListController{})
 	
