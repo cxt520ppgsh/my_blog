@@ -43,6 +43,7 @@ func QueryArticleList() []ArticleResult{
 	fmt.Println(sql)
 	rows, err := db.Query(sql)
 	if(err != nil){
+		panic(err)
 		return nil
 	}
 
@@ -108,6 +109,7 @@ func QueryArticleDetail(articleId string) ArticleDetailResult{
 	var article ArticleDetail
 	db, err := sql.Open("mysql", dbuser+":"+dbpassword+"@tcp("+dbhost+":"+dbport+")/"+dbname+"?"+dbcharset)
 	if(err != nil){
+		panic(err)
 		return articleResult
 	}
 
@@ -115,6 +117,7 @@ func QueryArticleDetail(articleId string) ArticleDetailResult{
 	fmt.Println(sql)
 	rows, err := db.Query(sql)
 	if(err != nil){
+		panic(err)
 		return articleResult
 	}
 
