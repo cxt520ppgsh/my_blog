@@ -3,7 +3,7 @@ import './api'
 
 // 按需引用element
 import { Loading } from 'element-ui'
-
+import showdown from 'showdown'
 //---------------------------------------------配置axios开始-----------------------------------------
 // 超时时间，单位为毫秒
 axios.defaults.timeout = 60000
@@ -44,7 +44,12 @@ axios.interceptors.response.use(response => { // 响应成功关闭loading
     })
     // ---------------------------------------------配置axios结束-----------------------------------------
 Vue.prototype.$axios = axios
-
+Vue.prototype.md2html = (md)=> {
+  let converter = new showdown.Converter()
+  let text = md.toString()
+  let html = converter.makeHtml(text)
+  return html
+}
 const article = r => require.ensure([], () => r(require('./components/article')), 'group-home')
 const sidebar = r => require.ensure([], () => r(require('./components/sidebar')), 'group-home')
 const about = r => require.ensure([], () => r(require('./components/about')), 'group-home')
@@ -65,3 +70,4 @@ new Vue({
     router: router,
     render: h => h(App)
 })
+
