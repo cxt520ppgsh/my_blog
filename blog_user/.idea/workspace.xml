@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caa2a385-3e0c-454b-a29b-6856cacc7026" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/app.4b699fda71534780a994.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app.4b699fda71534780a994.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/config/dev.env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/config/prod.env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/manifest.01a63706e24ad818d767.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/manifest.01a63706e24ad818d767.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/部署方式.md" beforeDir="false" afterPath="$PROJECT_DIR$/部署方式.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
