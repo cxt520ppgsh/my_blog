@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caa2a385-3e0c-454b-a29b-6856cacc7026" name="Default Changelist" comment="" />
+    <list default="true" id="caa2a385-3e0c-454b-a29b-6856cacc7026" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/models/mdarticle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/陈煦堂周报_2018-03-10 11:41:37.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/陈煦堂周报_2018-03-10 11:41:38.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/陈煦堂周报_2018-03-10 11:41:39.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/articlelistcontroller.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/articlelistcontroller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/article.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +38,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/front_end/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/mdarticles" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="go.sdk" />
@@ -42,9 +50,11 @@
       <recent name="$PROJECT_DIR$/front_end/src/md" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/mdarticles" />
+      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$/static/articles" />
       <recent name="$PROJECT_DIR$/front_end/src/assets" />
       <recent name="$PROJECT_DIR$/views" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">

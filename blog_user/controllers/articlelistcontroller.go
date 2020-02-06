@@ -14,12 +14,14 @@ type ArticleListController struct {
 
 
 func (this *ArticleListController) Post() {
+	models.QueryMDArticleList()
 
 	result := make(map[string]interface{})
 	
 	result["code"] = "000"
 	result["msg"] = "success"
-	var articleList []models.ArticleResult = models.QueryArticleList()
+	//var articleList []models.ArticleResult = models.QueryArticleList() 读数据库
+	var articleList []models.MDArticleResult = models.QueryMDArticleList() //读static文件夹的MD
 	result["data"] = articleList
 
 	bytes, err := json.Marshal(result)

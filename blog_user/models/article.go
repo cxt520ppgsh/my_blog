@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"
+	_ "io/ioutil"
+	_ "os"
 	"strings"
 )
 

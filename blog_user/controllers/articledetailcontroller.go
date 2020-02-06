@@ -18,7 +18,8 @@ func (this *ArticleDetailController) Post() {
 	var ob models.ArticleDetail
 	json.Unmarshal(this.Ctx.Input.RequestBody, &ob)
 
-	var articleDetail models.ArticleDetailResult = models.QueryArticleDetail(ob.ArticleId)
+	//var articleDetail models.ArticleDetailResult = models.QueryArticleDetail(ob.ArticleId) //使用数据库查ID
+	var articleDetail models.MDArticleDetailResult = models.QueryMDArticleDetail(ob.ArticleId) //查static目录
 	fmt.Println("request", string(this.Ctx.Input.RequestBody))
 	result["code"] = "000"
 	result["msg"] = "success"
