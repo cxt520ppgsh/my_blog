@@ -2,13 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caa2a385-3e0c-454b-a29b-6856cacc7026" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/mdarticle.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/mdarticles/陈煦堂周报_2018-03-10 11:41:37.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/mdarticles/陈煦堂周报_2018-03-10 11:41:38.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/mdarticles/陈煦堂周报_2018-03-10 11:41:39.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/01Arouter与模块化解析_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/02dex2oat与应用安装时间优化_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/03《Android开发小工专家》读书笔记_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/04Uiautomator基本使用_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/05Dagger2解析_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/06进程启动流程梳理_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/07主流视频解码库对比_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/08EventBus解析_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/09Redis初步理解_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/10RxJava解析_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/11glide解析_2020-02-07.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mdarticles/12uml类图使用_2020-02-07.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/articlelistcontroller.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/articlelistcontroller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/article.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/src/assets/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/src/assets/test.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/src/components/articleDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/src/components/articleDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/mdarticle.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/mdarticle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/mdarticles/陈煦堂周报_2018-03-10 11:41:37.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/mdarticles/陈煦堂周报_2018-03-10 11:41:38.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/mdarticles/陈煦堂周报_2018-03-10 11:41:39.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,17 +60,17 @@
     <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/front_end/src/assets" />
-      <recent name="$PROJECT_DIR$/front_end/src" />
-      <recent name="$PROJECT_DIR$/front_end/src/md" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/mdarticles" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/static/articles" />
       <recent name="$PROJECT_DIR$/front_end/src/assets" />
       <recent name="$PROJECT_DIR$/views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front_end/src/assets" />
+      <recent name="$PROJECT_DIR$/front_end/src" />
+      <recent name="$PROJECT_DIR$/front_end/src/md" />
     </key>
   </component>
   <component name="RunDashboard">

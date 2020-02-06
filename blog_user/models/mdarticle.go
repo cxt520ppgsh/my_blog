@@ -2,9 +2,9 @@ package models
 
 import (
 	"bufio"
-	_"database/sql"
+	_ "database/sql"
 	"fmt"
-	_"github.com/astaxie/beego"
+	_ "github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"
 	"io"
 	"io/ioutil"
@@ -13,6 +13,7 @@ import (
 	_ "os"
 	"strings"
 )
+
 const mdDir = "./static/mdarticles"
 
 type MDArticle struct {
@@ -56,10 +57,10 @@ func QueryMDArticleList() []MDArticleResult {
 	mdFileList, _ := getAllFile(mdDir)
 	for _, filename := range mdFileList {
 		var articleResult MDArticleResult
-		articleResult.Labels = []string{"无"}
+		articleResult.Labels = []string{"安卓"}
 		articleResult.ArticleId = filename
 		//articleResult.Content = readFileToContent(mdDir + "/" + filename)
-		articleResult.Date = strings.Split(strings.Split(filename, "_")[1],".md")[0]
+		articleResult.Date = strings.Split(strings.Split(filename, "_")[1], ".md")[0]
 		articleResult.Gist = readFileToGist(mdDir + "/" + filename)
 		articleResult.Title = strings.Split(filename, "_")[0]
 		articleResults = append(articleResults, articleResult)
@@ -70,10 +71,10 @@ func QueryMDArticleList() []MDArticleResult {
 //查询文章详情
 func QueryMDArticleDetail(articlePath string) MDArticleDetailResult {
 	var articleResult MDArticleDetailResult
-	filename := strings.Split(articlePath,mdDir+"/")[1]
-	articleResult.Labels = []string{"无"}
-	articleResult.Content = readFileToContent(articlePath)
-	articleResult.Date = strings.Split(strings.Split(filename, "_")[1],".md")[0]
+	filename := articlePath
+	articleResult.Labels = []string{"安卓"}
+	articleResult.Content = readFileToContent(mdDir + "/" + articlePath)
+	articleResult.Date = strings.Split(strings.Split(filename, "_")[1], ".md")[0]
 	articleResult.Gist = readFileToGist(mdDir + "/" + filename)
 	articleResult.Title = strings.Split(filename, "_")[0]
 	return articleResult
@@ -114,7 +115,10 @@ func readFileToContent(path string) string {
 	buf := bufio.NewReader(file)
 	for {
 		line, err := buf.ReadString('\n')
-		line = strings.TrimSpace(line)
+		if strings.Contains(line, "#") {  //#号增加空格
+			p := strings.LastIndex(line, "#")+1
+			line = line[:p] + " " + line[p:]
+		}
 		content += line
 		if err != nil {
 			if err == io.EOF {
@@ -147,12 +151,7 @@ func readFileToGist(path string) string {
 	fmt.Println("file size=", size)
 
 	buf := bufio.NewReader(file)
-	lineCount := 0;
 	for {
-		lineCount ++
-		if lineCount == 3 {
-			break
-		}
 		line, err := buf.ReadString('\n')
 		line = strings.TrimSpace(line)
 		content += line
@@ -165,6 +164,8 @@ func readFileToGist(path string) string {
 				return ""
 			}
 		}
+		break
 	}
+	content = strings.ReplaceAll(content,"#","")
 	return content
 }

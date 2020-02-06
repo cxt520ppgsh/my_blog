@@ -136,7 +136,7 @@
 
   #main {
     overflow: hidden;
-    width: 960px;
+    width: 90%;
     text-align: center;
     margin: auto;
   }
