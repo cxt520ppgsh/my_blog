@@ -1,12 +1,14 @@
-<template>
+<template xmlns="http://www.w3.org/1999/html">
   <div id="content" class="fontsize">
     <button class="fontsize" @click="sshbuild">Build</button>
+    <br/>
     <button class="fontsize" @click="stopBuild">停止编译</button>
+    <br/>
     <button class="fontsize" @click="connectSocket">连接</button>
+    <br/>
     <button class="fontsize" @click="sendSocketMsg">发消息</button>
-    <div class="fontsize" id="buildProgress">
-      <h1>编译进度 : {{buidProgress}}</h1>
-    </div>
+    <br/>
+    <h1>编译进度 : {{progress}}</h1>
   </div>
 </template>
 
@@ -16,11 +18,10 @@
     export default {
         data() {
             return {
-                buidProgress: "未开始",
+                progress: "未开始",
             }
         },
         mounted: function () {
-
             ws = new WebSocket("ws://127.0.0.1:8888/ws");//连接服务器
             ws.onopen = function (event) {
                 console.log(event);
@@ -29,8 +30,9 @@
             ws.onmessage = function (event) {
                 let date = new Date();
                 let msg = date.toLocaleString() + event.data;
+                console.log("receive msg mounted " + msg);
                 if (msg.indexOf("buildLog") >= 0) {
-                    set(this.buidProgress, 'name');
+                    this.progress = msg
                 } else {
                     alert(msg);
                 }
@@ -62,8 +64,9 @@
                 ws.onmessage = function (event) {
                     let date = new Date();
                     let msg = date.toLocaleString() + event.data;
+                    console.log("receive msg connectSocket " + msg);
                     if (msg.indexOf("buildLog") >= 0) {
-                        this.buidProgress = msg
+                        this.progress = msg
                     } else {
                         alert(msg);
                     }
@@ -88,7 +91,7 @@
 
 <style>
   .fontsize {
-    flex-direction:column;
+    flex-direction: column;
     display: inline-block;
     color: #222;
     font-size: 26px;

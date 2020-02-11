@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caa2a385-3e0c-454b-a29b-6856cacc7026" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/sshbuildController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end/src/components/mianSshClient.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/src/components/article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/src/components/article.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/src/components/sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/src/components/sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/src/components/mainSshClient.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/src/components/mainSshClient.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,17 +47,17 @@
     <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/front_end/src/assets" />
-      <recent name="$PROJECT_DIR$/front_end/src" />
-      <recent name="$PROJECT_DIR$/front_end/src/md" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/controllers" />
       <recent name="$PROJECT_DIR$/front_end/src/components" />
       <recent name="$PROJECT_DIR$/static/mdarticles" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/static/articles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front_end/src/assets" />
+      <recent name="$PROJECT_DIR$/front_end/src" />
+      <recent name="$PROJECT_DIR$/front_end/src/md" />
     </key>
   </component>
   <component name="RunDashboard">
