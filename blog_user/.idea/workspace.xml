@@ -47,17 +47,17 @@
     <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front_end/src/assets" />
+      <recent name="$PROJECT_DIR$/front_end/src" />
+      <recent name="$PROJECT_DIR$/front_end/src/md" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/controllers" />
       <recent name="$PROJECT_DIR$/front_end/src/components" />
       <recent name="$PROJECT_DIR$/static/mdarticles" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/static/articles" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/front_end/src/assets" />
-      <recent name="$PROJECT_DIR$/front_end/src" />
-      <recent name="$PROJECT_DIR$/front_end/src/md" />
     </key>
   </component>
   <component name="RunDashboard">

@@ -22,7 +22,7 @@
             }
         },
         mounted: function () {
-            ws = new WebSocket("ws://127.0.0.1:8888/ws");//连接服务器
+            ws = new WebSocket("ws://127.0.0.1:8888/ws");
             ws.onopen = function (event) {
                 console.log(event);
                 alert('连接了');
@@ -30,9 +30,9 @@
             ws.onmessage = function (event) {
                 let date = new Date();
                 let msg = date.toLocaleString() + event.data;
-                console.log("receive msg mounted " + msg);
                 if (msg.indexOf("buildLog") >= 0) {
-                    this.progress = msg
+                    this.progress = msg;
+                    console.log("receive msg mounted " + msg);
                 } else {
                     alert(msg);
                 }
