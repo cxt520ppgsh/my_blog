@@ -16,6 +16,11 @@
             <span>关于</span>
           </li>
         </router-link>
+        <router-link to="/mainSshClient">
+          <li class="nav">
+            <span>服务器客户端</span>
+          </li>
+        </router-link>
       </ul>
     </nav>
     <div class="info">

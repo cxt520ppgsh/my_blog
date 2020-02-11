@@ -3,3 +3,4 @@ var port = process.env.API_PORT
 
 global.articleList = domain + ":" + port + "/articleList"
 global.articleDetail = domain + ":" + port + "/articleDetail"
+global.sshbuild = domain + ":" + port + "/sshbuild"

@@ -36,6 +36,8 @@ func printTerminalLast3(outb *bytes.Buffer) {
 	for {
 		time.Sleep(1000 * time.Millisecond)
 		arr := strings.Split(outb.String(), "\n")
-		fmt.Println(arr[len(arr)-3])
+		if len(arr) > 3 {
+			fmt.Println(arr[len(arr)-3])
+		}
 	}
 }

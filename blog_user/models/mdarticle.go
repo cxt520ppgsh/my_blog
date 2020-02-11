@@ -109,8 +109,8 @@ func readFileToContent(path string) string {
 		panic(err)
 	}
 
-	var size = stat.Size()
-	fmt.Println("file size=", size)
+	var _ = stat.Size()
+	//fmt.Println("file size=", size)
 
 	buf := bufio.NewReader(file)
 	for {
@@ -147,8 +147,8 @@ func readFileToGist(path string) string {
 		panic(err)
 	}
 
-	var size = stat.Size()
-	fmt.Println("file size=", size)
+	var _ = stat.Size()
+	//fmt.Println("file size=", size)
 
 	buf := bufio.NewReader(file)
 	for {

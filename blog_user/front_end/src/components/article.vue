@@ -6,7 +6,7 @@
         <span class="article_info_date">发表于：{{ item.date }}</span>
         <span class="article_info_label">标签：
         <span v-if="item.labels.length === 0">未分类</span>
-        <el-tag v-else class="tag_margin" type="primary" v-for="tag in item.labels">{{ tag }}</el-tag>
+        <div v-else class="tag_margin" type="primary" v-for="tag in item.labels">{{ tag }}</div>
         </span>
       </div>
       <div class="article_gist">{{ item.gist }}</div>

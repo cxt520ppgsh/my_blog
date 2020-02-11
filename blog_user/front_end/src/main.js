@@ -54,11 +54,13 @@ const article = r => require.ensure([], () => r(require('./components/article'))
 const sidebar = r => require.ensure([], () => r(require('./components/sidebar')), 'group-home')
 const about = r => require.ensure([], () => r(require('./components/about')), 'group-home')
 const articleDetail = r => require.ensure([], () => r(require('./components/articleDetail')), 'group-home')
+const mainSshClient = r => require.ensure([], () => r(require('./components/mainSshClient')), 'group-home')
 
 const router = new VueRouter({
     routes: [
         { path: '/', components: { default: article, sidebar: sidebar } },
         { path: '/about', components: { default: about, sidebar: sidebar } },
+        { path: '/mainSshClient', components: { default: mainSshClient, sidebar: sidebar } },
         { path: '/articleDetail/:articleId', components: { default: articleDetail, sidebar: sidebar } },
         { path: '/article', components: { default: article, sidebar: sidebar } }
     ],

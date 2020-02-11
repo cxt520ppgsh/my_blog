@@ -26,4 +26,5 @@ func init() {
 	beego.Router("/", &controllers.MainController{})
 	beego.Router("/articleDetail", &controllers.ArticleDetailController{})
 	beego.Router("/articleList", &controllers.ArticleListController{})
+	beego.Router("/sshbuild", &controllers.SSHBuildController{})
 }
