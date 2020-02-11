@@ -34,10 +34,12 @@ func TestCd() {
 
 func printTerminalLast3(outb *bytes.Buffer) {
 	for {
-		time.Sleep(1000 * time.Millisecond)
+		time.Sleep(3000 * time.Millisecond)
 		arr := strings.Split(outb.String(), "\n")
 		if len(arr) > 3 {
-			fmt.Println(arr[len(arr)-3])
+			line := arr[len(arr)-3]
+			fmt.Println(line)
+			SendSocketMessage("buildLog" + line)
 		}
 	}
 }
