@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"
+	_"go_vue_blog/blog_user/controllers/utils"
 	"go_vue_blog/blog_user/models"
 )
 
@@ -31,3 +32,5 @@ func (this *ArticleDetailController) Post() {
 	this.Data["json"] = string(bytes)
 	this.ServeJSON()
 }
+
+

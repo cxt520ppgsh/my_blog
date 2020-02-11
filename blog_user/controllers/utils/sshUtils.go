@@ -1,10 +1,10 @@
 package utils
 
 import (
+	"bytes"
 	"fmt"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/terminal"
-	"io"
 	_ "io"
 	"net"
 	"os"
@@ -39,8 +39,7 @@ func New(ip string, username string, password string, port ...int) *Cli {
 	return cli
 }
 
-//执行shell
-//@param shell shell脚本命令
+//执行普通命令
 func (c Cli) Run(shell string) (string, error) {
 	if c.client == nil {
 		if err := c.connect(); err != nil {
@@ -59,7 +58,7 @@ func (c Cli) Run(shell string) (string, error) {
 }
 
 //执行带交互的命令
-func (c *Cli) RunTerminal(shell string, stdout, stderr io.Writer) error {
+func (c *Cli) RunTerminal(shell string, stdout, stderr *bytes.Buffer) error {
 	if c.client == nil {
 		if err := c.connect(); err != nil {
 			return err
@@ -99,6 +98,10 @@ func (c *Cli) RunTerminal(shell string, stdout, stderr io.Writer) error {
 	}
 
 	session.Run(shell)
+
+	if err != nil {
+		panic(err)
+	}
 	return nil
 }
 
