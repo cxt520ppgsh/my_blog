@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caa2a385-3e0c-454b-a29b-6856cacc7026" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/utils/trycatch.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/utils/socketUtils.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/utils/socketUtils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/utils/sshUtils.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/utils/sshUtils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/utils/testSSh.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/utils/testSSh.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front_end/src/components/mainSshClient.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/src/components/mainSshClient.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

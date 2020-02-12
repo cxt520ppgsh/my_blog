@@ -4,6 +4,8 @@ import (
 	"github.com/gorilla/websocket"
 	"log"
 	"net/http"
+	"strings"
+	"time"
 )
 
 var (
@@ -48,17 +50,25 @@ func CloseSocket() {
 
 func receiveMessage() {
 	for {
+		time.Sleep(time.Millisecond * 1000)
 		// 只能发送Text, Binary 类型的数据,下划线意思是忽略这个变量.
 		if _, data, err = wbsCon.ReadMessage(); err != nil {
+			CloseSocket()
+		}
+
+		var msg = string(data[:])
+		if strings.Contains(msg, "stop") {
+			StopBuild()
 			CloseSocket()
 		}
 		if err = wbsCon.WriteMessage(websocket.TextMessage, data); err != nil {
 			CloseSocket()
 		}
 	}
+
 }
 
-func SendSocketMessage(message string)  {
+func SendSocketMessage(message string) {
 	if err = wbsCon.WriteMessage(websocket.TextMessage, []byte(message)); err != nil {
 		CloseSocket()
 	}

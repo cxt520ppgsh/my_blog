@@ -105,6 +105,10 @@ func (c *Cli) RunTerminal(shell string, stdout, stderr *bytes.Buffer) error {
 	return nil
 }
 
+func (c *Cli) StopSession() {
+	c.client.Close()
+}
+
 //连接
 func (c *Cli) connect() error {
 	config := ssh.ClientConfig{
